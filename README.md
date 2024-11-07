@@ -1,27 +1,48 @@
-# TestPlanisenseFront
+# TestPlanisenseFront - Arbres en région Parisienne
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+Cette application Angular permet d'afficher le nombre d'arbres présents par arrondissements et par genre en région parisienne.
 
-## Development server
+## Prérequis
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Node.js (version 14 ou supérieure)
+- Angular CLI
+- NPM
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 1. Clonez ce dépôt sur votre machine locale :
 
-## Build
+```bash
+   git clone https://github.com/LeunaBill/TestPlanisenseFrontEnd.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 2. Installer les dépendances :
 
-## Running unit tests
+Naviguez vers le répertoire du projet et exécutez la commande suivante pour installer les dépendances via NPM :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+   npm install
+```
 
-## Running end-to-end tests
+### 3. Lancer l'application : 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Pour démarrer l'application, exécutez la commande suivante :
 
-## Further help
+```bash
+   ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+L'application sera accessible à l'adresse suivante : http://localhost:4200.
+
+### 4. Description du projet
+
+L'application permet de visualiser les arbres de la région parisienne, avec les informations suivantes :
+
+- **Arbres par arrondissement** : Affiche le nombre d'arbres pour chaque arrondissement.
+- **Arbres par genre** : Affiche le nombre d'arbres pour chaque genre.
+
+### 5. Fonctionnalités
+
+- **Filtrage par arrondissement** : L'utilisateur peut filtrer les arbres par arrondissement.
+- **Filtrage par genre** : L'utilisateur peut filtrer les arbres par genre.
+- **Recherche dynamique** : L'utilisateur peut rechercher des genres ou des arrondissements spécifiques.

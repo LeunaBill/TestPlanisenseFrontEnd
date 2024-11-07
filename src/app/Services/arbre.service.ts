@@ -14,10 +14,10 @@ export class ArbreService {
   constructor(private http: HttpClient) { }
 
   getArbresParArrondissement(): Observable<ArbresParArrondissement[]> {
-    return this.http.get<ArbresParArrondissement[]>(`${this.baseUrl}/arrondissements`);
+    return this.http.get<ArbresParArrondissement[]>(`${this.baseUrl}/arrondissements/get`);
   }
 
   getArbresParGenre(): Observable<ArbresParGenre[]> {
-    return this.http.get<ArbresParGenre[]>(`${this.baseUrl}/genres`);
+    return this.http.get<ArbresParGenre[]>(`${this.baseUrl}/genres/get`);
   }
 }
