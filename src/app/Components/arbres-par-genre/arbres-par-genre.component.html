@@ -1,0 +1,23 @@
+<h2>Arbres par Genre</h2>
+<div class="search-filter-container">
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher par genre"/>
+    <button (click)="filterArbres()">Filtrer</button>
+    <button (click)="resetFilter()">Afficher tout</button>
+</div>
+<div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Genre</th>
+          <th>Nombre d'Arbres</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of filteredArbres">
+          <td>{{ item.genre }}</td>
+          <td>{{ item.nombreArbres }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  

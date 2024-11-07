@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    color: #03395c;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 34px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    margin: 0 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #3498db;
+    color: white;
+}
